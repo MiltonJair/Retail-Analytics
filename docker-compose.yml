@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # Walmart Analytics Application
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      SQL_SERVER: mssql
+      SQL_DATABASE: WalmartAnalytics
+    depends_on:
+      - mssql
+    volumes:
+      - ./src:/app/src
+      - ./database:/app/database
+
+  # SQL Server 2019
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: "YourPassword123!"
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+volumes:
+  mssql_data:

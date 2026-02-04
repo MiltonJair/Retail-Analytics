@@ -1,0 +1,39 @@
+## 100/100 Roadmap
+
+Current: 95/100
+
+### Missing 5 Points
+
+**Tests (1.5 pts)** - CRITICAL
+- Unit tests for analytics_queries.py
+- Integration tests for database
+- Run: pytest tests/
+
+**API (1.5 pts)** - HIGH
+- REST endpoints (FastAPI)
+- /api/customers, /api/forecasts, /api/segments
+- Swagger docs auto-generated
+
+**Docker (1 pt)** - HIGH
+- Dockerfile for app
+- docker-compose for app + SQL Server
+- Build: docker build -t walmart .
+
+**CI/CD (0.5 pts)** - MEDIUM
+- GitHub Actions workflow
+- Auto-run tests on push
+- Deploy to production
+
+**Monitoring (0.5 pts)** - MEDIUM
+- Redis caching
+- Performance metrics
+- Error tracking
+
+### Priority Order
+
+1. **Tests** - Easiest, most impact (hiring value)
+2. **API** - Shows REST knowledge
+3. **Docker** - Shows DevOps skills
+4. **CI/CD** - Shows production readiness
+
+If you add 1,2,3 → 100/100 guaranteed
