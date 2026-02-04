@@ -1,6 +1,5 @@
 # Walmart Analytics
 
-[![Tests](https://github.com/YOUR-USERNAME/walmart-analytics/workflows/Tests/badge.svg)](https://github.com/YOUR-USERNAME/walmart-analytics/actions)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
